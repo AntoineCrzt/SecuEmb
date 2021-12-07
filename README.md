@@ -97,7 +97,7 @@ Mon b8 intéressant, en comparant aussi avec mon objdump, est à la ligne "00001
 On voit d'ailleurs qu'en mettant le 1 à un autre endroit de la ligne, ou même "autre chose que 0", on obtient le même résultat :). C'est l'interprétation de "true"
 
 
-![True false](Capture d’écran du 2021-12-07 15-08-36.png)
+![True false](true_false.png)
 
 
 
