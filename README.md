@@ -94,5 +94,11 @@ user@optiplex-1503:~/Documents/SecuEmbarque$ hexdump -C emily | less | grep b8
 ```
 Mon b8 intéressant, en comparant aussi avec mon objdump, est à la ligne "000011a0  bc fe ff ff 85 c0 75 07  b8 01 00 00 00 eb 05 b8  |......u.........|". C'est 11a0 + 16 : Je transforme ça en décimal et j'obtiens 4528.
 
+On voit d'ailleurs qu'en mettant le 1 à un autre endroit de la ligne, ou même "autre chose que 0", on obtient le même résultat :). C'est l'interprétation de "true"
+
+
+![True false](Capture d’écran du 2021-12-07 15-08-36.png)
+
+
 
 
