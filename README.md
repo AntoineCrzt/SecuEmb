@@ -99,6 +99,14 @@ On voit d'ailleurs qu'en mettant le 1 à un autre endroit de la ligne, ou même 
 
 ![True false](true_false.png)
 
+## Différence avec ARM
+Les instructions ne seront pas les mêmes. En ARM, il y a beaucoup moins d'instructions de base. 
 
+## Sur une boucle for
+On peut faire en sorte de ne jamais passer dans la boucle, ou de lire les données d'un tableau par exemple.
+
+## Contre le patching
+Il est possible de signer le binaire et de vérifier l'intégrité de ce fichier et sa signature dès qu'il est exécuté. 
+On peut aussi, pour éviter de modifier le code une fois qu'il est en RAM, chiffrer la RAM. 
 
 
