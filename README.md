@@ -21,7 +21,7 @@ J'ai ouvert le fichier de tux dans un éditeur d'image et j'ai modifié quelques
 Ensuite, je voulais recréer la machine virtuelle en faisant les opérations inverses. Après plusieurs essais, j'ai trouvé la commande suivante qui me permettait d'extraire plus rapidement.
 ```binwalk -e -M -r --directory=. vmlinuz-qemu-arm-2.6.20
 ```
-Voici ensuite les commandes que j'ai utilisées pour faire les "remontages" : 
+Voici ensuite les commandes que j'ai utilisées pour faire les "remontages" (évidemment, ça n'a pas été si simple que ce que les commandes ci-dessous le laissent entendre. Il a fallu plusieurs tests et essais) : 
 ```
 cd _vmlinuz-qemu-arm-2.6.20-0.extracted/_31B0.extracted/_E7E0.extracted/cpio-root/
 find . | cpio -o -H newc >> ./../../bob.cpio
@@ -35,6 +35,11 @@ dd if=31B0 of=vmlinuz-qemu-arm-2.6.20 bs=1 seek=12720 conv=notrunc
 ```
 
 Après comparaisons, l'image de base et l'image recrée sont bien les mêmes quand on les observe avec binwalk (hormis les dates évidemment) : 
+![Vm linuz before](vmlinuzbefore.png)
+![Vm linuz after](vmlinuzafter.png)
+
+Malheureusement, lors du lancement de la VM, j'obtiens le message d'erreur suivant : "Guest has not initialized the display (yet)".
+
 
 ## Différence avec ARM
 
