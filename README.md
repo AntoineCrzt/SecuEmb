@@ -13,6 +13,21 @@ J'ai trouvé le repo suivant : https://github.com/DigitalSecurity/btlejuice mais
 J'ai trouvé le repo suivant : https://github.com/wifiphisher/wifiphisher
 Il me parait super prometteur et intéressant. Je le teste sur kali linux, comme recommandé. J'ai malheureusement des erreurs car wifiphisher n'arrive pas à trouver de carte wifi. J'ai vu que c'était un souci courant sur les macbook. J'ai suivi plusieurs tutoriels, dont celui-ci : https://pentestmac.wordpress.com/2015/11/28/kali-linux-broadcom-wireless-on-macbook/, mais sans succès. Je n'arrive pas à débloquer la carte wifi...
 Il m'a donc été impossible de tester.
+Sur les machines de l'INSA même souci, voici le résultat : 
+```
+user@optiplex-1503:~/Documents/xkyt/wifiphisher$ sudo iwconfig
+lo        no wireless extensions.
+
+vmnet1    no wireless extensions.
+
+vmnet8    no wireless extensions.
+
+br0       no wireless extensions.
+
+docker0   no wireless extensions.
+
+eno1      no wireless extensions.
+```
 
 ### MITM USB
 J'ai trouvé le repo suivant : https://github.com/BenGardiner/USBProxy
