@@ -1,3 +1,7 @@
+# Organisation
+TD organisés en différentes branches. Vous pouvez les parcourir (TD2,3,4,question générale...)
+
+
 # TD2 Emily
 
 ## Découverte
